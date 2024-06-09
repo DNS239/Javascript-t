@@ -1,11 +1,13 @@
-const numero = 2;
+const numero = 5;
 
-const numeroPar = (numero % 2) === 0;
+const isNumeroPar = (numero % 2) === 0;
 
-if (numeroPar) {
-    console.log('Par');
+
+if (isNumeroPar) {
+    console.log('Numero é Par.');
+}else {
+    console.log('Numero é Impar.');
 }
 
-if (!numeroPar) {
-    console.log('Impar');
-}
+
+
