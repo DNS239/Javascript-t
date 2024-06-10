@@ -1,12 +1,22 @@
+function aplicarDescont(valor, desconto) {
+    return (valor - (valor * (desconto / 100)));
+}
+
+
+function aplicarJuros(valor, desconto) {
+    return (valor + (valor * (desconto / 100)));
+}
+
+
 const precoDaEtiqueta = 100;
 const formaDePagamento = 4;
 
 if (formaDePagamento === 1) {
-    console.log(precoDaEtiqueta - (precoDaEtiqueta * 0.1));
-}else if (formaDePagamento === 2) {
-    console.log(precoDaEtiqueta- (precoDaEtiqueta * 0.15));
-}else if (formaDePagamento === 3) {
+    console.log(aplicarDescont(precoDaEtiqueta, 10));
+} else if (formaDePagamento === 2) {
+    console.log(aplicarDescont(precoDaEtiqueta, 15));
+} else if (formaDePagamento === 3) {
     console.log(precoDaEtiqueta);
-}else {
-    console.log(precoDaEtiqueta + (precoDaEtiqueta * 0.1));
+} else {
+    console.log(aplicarJuros(precoDaEtiqueta, 10));
 }
