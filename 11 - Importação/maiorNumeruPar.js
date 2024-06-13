@@ -6,8 +6,7 @@ let maiorNumeroPar = null;
 let menorNumeroImpar = null;
 
 for (let i = 0; i < n; i++) {
-    const numero = gets();
-
+    const numero = gets();//Obs.  const numero = parseInt(gets()); //Desafio so funcionou com isso.
     if (numero % 2 === 0) {
         if (maiorNumeroPar === null || numero > maiorNumeroPar) {
             maiorNumeroPar = numero;
@@ -16,6 +15,7 @@ for (let i = 0; i < n; i++) {
     } else {
         if (menorNumeroImpar === null || numero < menorNumeroImpar) {
             menorNumeroImpar = numero;
+            
         }
     }
 
