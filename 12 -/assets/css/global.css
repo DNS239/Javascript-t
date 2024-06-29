@@ -1,9 +1,20 @@
-* {
-    padding: 0px;
-    margin: 0px;
+@font-face {
+    font-family: The;
+    src: url('../font/The Centurion.ttf') format('opentype');
 }
 
 
-h1 {
-    background-color: crimson;
+.content {
+    padding: 1rem;
+}
+
+.content h1 {
+    margin: 0;
+    
+}
+
+
+body {
+    font-family: 'The';
+    color: tomato;
 }
