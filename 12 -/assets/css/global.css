@@ -1,20 +1,40 @@
+* {
+
+    color: rgb(91, 34, 156);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: salmon;
+}
+
+
 @font-face {
     font-family: The;
     src: url('../font/The Centurion.ttf') format('opentype');
 }
 
 
+
+
 .content {
+    width: 100vw;
+    height: 100vh;
     padding: 1rem;
+    background-color: white;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
 }
 
 .content h1 {
+    font-weight: bolder;
     margin: 0;
-    
-}
-
-
-body {
     font-family: 'The';
-    color: tomato;
 }
