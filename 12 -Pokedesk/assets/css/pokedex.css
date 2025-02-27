@@ -100,6 +100,8 @@
 }
 
 .pokemon {
+    max-width: 300px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     margin: .5rem;
@@ -111,9 +113,10 @@
 
 .pokemon .detail {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .pokemon .detail .types {
@@ -153,6 +156,22 @@
     max-width: 100%;
     height: 85px;
 
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+ul {
+    margin-left: -33px;
+    text-align: justify;
 }
 
 
